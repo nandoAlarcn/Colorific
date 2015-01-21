@@ -17,14 +17,17 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ld-tH-MGf">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="54" y="199" width="180" height="298"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <color key="tintColor" red="0.34930989632880466" green="0.61568813131313127" blue="0.39413382340187553" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Tap to change color">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.31477303257803102" green="0.9372238005050505" blue="0.40493903013228266" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="changeColor:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zjZ-Jz-MUv"/>
+                                    <outletCollection property="gestureRecognizers" destination="TPd-2I-S6S" appends="YES" id="7WM-9h-Kao"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -32,10 +35,12 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="TPd-2I-S6S"/>
             </objects>
             <point key="canvasLocation" x="310" y="121"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.51368778246585389" green="0.71836406302265376" blue="1" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
